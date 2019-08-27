@@ -8,6 +8,10 @@ function ScheduleForm(props) {
     return (
       <form onSubmit={props.saveEvent}>
         <div className="form-group">
+          <label>Email</label>
+          <input type="email" className="form-control" name="email" />
+        </div>
+        <div className="form-group">
           <label>Title</label>
           <input type="text" className="form-control" name="title" />
         </div>

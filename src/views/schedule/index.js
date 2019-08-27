@@ -11,8 +11,9 @@ class Schedule extends Component {
     let month = e.target.elements.month.value;
     let year = e.target.elements.year.value;
     let notes = e.target.elements.notes.value;
+    let email = e.target.elements.email.value;
 
-    let URL = 'https://event-scheduler-backend-23.herokuapp.com/api/save';
+    let URL = 'http://localhost:5000/api/save';
 
     let response = await fetch(URL, {
       "method": "POST",
@@ -23,6 +24,7 @@ class Schedule extends Component {
       "month": month,
       "day": day,
       "notes": notes,
+      "email":email,
     }
 
     });
